@@ -44,6 +44,10 @@ body{
     position: relative;
 }
 
+.pages{
+    color: var(--color-white);
+    text-decoration: none;
+}
 
 .pages a:visited{
     color:var(--color-orange-0)
@@ -89,27 +93,49 @@ nav i:hover{
 }
 
 .text-box-1 p{
-    font-size: 24px;
+    font-size: 27px;
     position: relative;
 }
 
-.hero-btn{
+// .hero-btn{
+//     display: inline-block;
+//     text-decoration: none;
+//     //border: 1px solid var(--color-white);
+//     padding: 0px;
+//     background-color: transparent;
+//     color: var(--color-white);
+//     font-size: 48px;
+//     font-weight: bold;
+//     position: relative;
+//     //cursor: pointer;
+//     cursor: text;  
+// }
+// .hero-btn:hover{
+//     background-color: transparent;
+//     color: var(--color-orange-0);
+//     transition: .75s ease-in-out;
+// }
+
+.hero-btn {
     display: inline-block;
     text-decoration: none;
     //border: 1px solid var(--color-white);
     padding: 0px;
     background-color: transparent;
-    color: var(--color-white);
-    font-size: 48px;
+    font-size: 54px;
     font-weight: bold;
     position: relative;
-    cursor: pointer;
-}
-.hero-btn:hover{
-    background-color: transparent;
-    color: var(--color-orange-0);
-    transition: .75s ease-in-out;
-}
+    color:var(--color-white);
+    animation-delay:2s;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+};
+
+@keyframes color {
+from {color: var(--color-white)}
+to {color: var(--color-orange-0)}
+};
 
 
 .nav-links ul li::after{
@@ -155,3 +181,434 @@ nav i:hover{
         margin: 0% 0% 0% 10%;
     }
 }
+
+
+
+
+
+
+
+
+
+// Resumo/Abstract
+.resumo{
+    margin:auto;
+    text-align: center;
+    padding-top:100px;
+    //background-image: linear-gradient(rgba(185, 102, 44, 0.6),rgba(185, 102, 44, 0.2)),url(../img/background-street-1.png);
+    background-image: linear-gradient(rgba(1, 95, 99, 0.7),rgba(1, 95, 99, 0)),url(../img/background-street-2.png);
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: inline-flex;
+}
+
+.escrito{
+    max-width: 28%;
+    margin-left: 14%;
+    margin-top: auto;
+    margin-bottom:auto;
+    //background-color: rgba(1, 95, 99, 0.4); //var(--color-green-3);
+    //border: solid 40px rgba(1, 95, 99, 0.1);//var(--color-green-3);
+}
+
+.MB-11{
+    margin-top:-7%;
+    max-width: 95%;
+    font-size: 40px;
+    text-align: left;
+}
+.MB-11:hover{
+    background-color: transparent;
+    color: transparent;
+    transition: .75s ease-in-out;
+}
+
+.MB-12{
+    max-width: 95%;
+    font-size: 31.5px;
+    text-align: left;
+}
+.MB-12:hover{
+    background-color: transparent;
+    color: transparent;
+    transition: .75s ease-in-out;
+}
+
+.MB-13{
+    max-width: 95%;
+    //font-size: 74px;
+    font-size: 48px;
+    text-align: left;
+}
+
+.MB-13:hover{
+    background-color: transparent;
+    color: transparent;
+    transition: .75s ease-in-out;
+}
+
+.citacao{
+    max-width: 95%;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.citacao:hover{
+    background-color: transparent;
+    color: transparent;
+    transition: .75s ease-in-out;
+}
+
+
+// ABSTRACT SE FOR PARTE DO RESUMO
+.abstract{
+    width: 100%;
+    text-align: justify;
+    text-align-last: left;
+}
+
+.solo-cont{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left: auto;
+    margin-right: 14%;
+    display: block;
+}
+
+.solo-1{
+    max-width: 72%;
+    width:auto;
+    height:auto;
+    position:relative;
+    border: solid;
+    border-width: 10px;
+    border-color:var(--color-white);
+    margin-top: 8%;
+}
+
+//SETA DESENHO
+
+.arrow{
+    max-width: 85%;
+    width: auto;
+    height: auto;
+    position:relative;
+    transform: rotate(0.7deg);
+    margin-left: 12%;
+    margin-right: -3%;
+}
+
+
+// SETA ANIMADA
+// .arrow {
+//     position: absolute;
+//     margin-top: 20px;
+//     margin-left: 15%;
+//     margin-right: auto;
+//     transform: translate(-50%, -50%);
+//     transform: rotate(-90deg);
+//     cursor: pointer;
+// }
+
+// .arrow span {
+//     display: block;
+//     width: 1.5vw;
+//     height: 1.5vw;
+//     border-bottom: 5px solid white;
+//     border-right: 5px solid white;
+//     transform: rotate(45deg);
+//     margin: -10px;
+//     animation: animate 2s infinite;
+// }
+
+// .arrow span:nth-child(2) {
+//     animation-delay: -0.2s;
+// }
+
+// .arrow span:nth-child(3) {
+//     animation-delay: -0.4s;
+// }
+
+// @keyframes animate {
+//     0% {
+//         opacity: 0;
+//         transform: rotate(45deg) translate(-20px, -20px);
+//     }
+//     50% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//         transform: rotate(45deg) translate(20px, 20px);
+//     }
+// }
+  
+
+// PÁGINA INVESTIGAÇÃO
+.invest-body{
+    background-color: var(--color-orange-2);
+    background-image: linear-gradient(  
+                                        // rgba(51, 22, 13, 1),
+                                        // rgba(98, 53, 24, 1),
+                                        // rgba(88, 38, 17, 1),
+                                        rgba(184, 71, 31, 1),
+                                        rgba(199, 63, 24,  0.5),
+                                        rgba(185, 102, 44,  0.1))/*,url(../img/soil-texture.png)*/;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-invest{
+    min-height: 100vh;
+    width: 100%;
+    //background-color: var(--color-green-1);
+    //background-image: linear-gradient(rgba(1, 95, 99, 1),rgba(1, 95, 99, 0))/*,url(../img/background-street-2.png)*/;
+    
+    position: relative;
+}
+
+.intr-invest{
+    margin-left:6.2%;
+    margin-right:50%;
+    text-align: justify;
+}
+
+.titulo-invest{
+    text-align: left;
+    padding-top:25px;
+   // width: 100%;
+    position: relative;
+    font-size: 40px;
+}
+
+.bubbles {
+    height: 100vh;
+    width: 100%;
+    //overflow: hidden;
+}
+
+.bubble {
+    width: 10px;
+    height: 10px;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: absolute;
+}
+
+.x1 {
+    left: 8%;
+    background: var(--color-orange-2);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.8;
+    animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 15%;
+    background: var(--color-orange-1);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 1;
+    animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 22%;
+    background: var(--color-orange-1);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+    left: 36%;
+    background: var(--color-orange-3);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 1;
+    animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+.x5 {
+    left: 42%;
+    background: var(--color-orange-0);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.7; 
+    animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+.x6 {
+    left: 55%;
+    background: var(--color-orange-1);
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    transform: scale(0.4);
+    opacity: 0.9; 
+    animation: moveclouds 10s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+.x7 {
+    left: 74%;
+    background: var(--color-orange-0);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.8; 
+    animation: moveclouds 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+}
+
+.x8 {
+    left: 83%;
+    background: var(--color-orange-2);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.9; 
+    animation: moveclouds 16s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+.x9 {
+    left: 87%;
+    background: var(--color-orange-3);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.7; 
+    animation: moveclouds 19s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+.x10 {
+    left: 95%;
+    background: var(--color-orange-0);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.6; 
+    animation: moveclouds 8s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveclouds { 
+    0% { 
+        top: -500px;
+    }
+    100% { 
+        top: 95vh;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@keyframes moveclouds {     
+    0% { 
+        top: -500px;
+    }
+
+    100% { 
+        top: 95vh;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+@keyframes moveclouds {
+    0% { 
+        top: -500px;
+    }
+    100% { 
+        top: 95vh;
+    }
+}
+
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {
+        margin-left:50px;
+    }
+}
+
+.invest-row{
+    display: flex;
+    padding-left: 7%;
+    padding-right: 7%;
+    //background-image: linear-gradient(rgba(1, 95, 99, 0.7),rgba(1, 95, 99, 0)),url(../img/soloexp-1.png);
+}
+
+.invest-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.invest-column{
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid;
+    border-width: 9px;
+    border-radius:50%;
+}
+
+.pin{
+    margin-top: 2%;
+    border: none;
+    text-align: center;
+    border-radius:0%;
+    padding: 10px;
+}
+
+.invest-column:hover{
+    background-color: #015f63;
+    transition: .5s ease-in-out;
+}
+
+.pin:hover{
+    background-color: #015f6300;
+    transition: .5s ease-in-out;
+}
+
+.sob-terr-1{
+    height: 100vh;
+    width: 100%;
+}
+
+.subsec{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
