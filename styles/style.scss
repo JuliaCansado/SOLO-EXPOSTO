@@ -93,7 +93,7 @@ nav i:hover{
 }
 
 .text-box-1 p{
-    font-size: 27px;
+    font-size: 18.8px;
     position: relative;
 }
 
@@ -181,7 +181,6 @@ to {color: var(--color-orange-0)}
         margin: 0% 0% 0% 10%;
     }
 }
-
 
 
 
@@ -351,6 +350,16 @@ to {color: var(--color-orange-0)}
 // }
   
 
+
+
+
+
+
+
+
+
+
+
 // PÁGINA INVESTIGAÇÃO
 .invest-body{
     background-color: var(--color-orange-2);
@@ -358,9 +367,10 @@ to {color: var(--color-orange-0)}
                                         // rgba(51, 22, 13, 1),
                                         // rgba(98, 53, 24, 1),
                                         // rgba(88, 38, 17, 1),
-                                        rgba(184, 71, 31, 1),
-                                        rgba(199, 63, 24,  0.5),
-                                        rgba(185, 102, 44,  0.1))/*,url(../img/soil-texture.png)*/;
+                                        rgba(184, 71, 31, 0.4),
+                                        rgba(184, 71, 31, 1))
+                                        /*rgba(199, 63, 24,  0.5),
+                                        rgba(185, 102, 44,  0.1)),url(../img/soil-texture.png)*/;
     background-position: center;
     background-size: cover;
 }
@@ -376,8 +386,52 @@ to {color: var(--color-orange-0)}
 
 .intr-invest{
     margin-left:6.2%;
-    margin-right:50%;
+    max-width:45%;
     text-align: justify;
+}
+
+.intr-invest h2{
+    font-size: 20px;
+    color: var(--color-white);
+
+}
+
+.cit{
+    border: solid;
+    border-width: 9px;
+    border-color: transparent;
+
+    background-image: linear-gradient(var(--color-green-2),var(--color-green-2));
+    background-repeat: no-repeat;
+
+    background-size: 10px 100%;
+    background-position: 0 100%;
+    transition: 
+        background-size 0.5s,
+        background-position 0.3s 0.5s
+}
+
+.cit:hover{
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    transition: 
+        background-position 0.3s
+        background-size 0.5s 0.3s;
+
+}
+
+.intr-invest h3{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.intr-invest p{
+    font-size: 17px;
+}
+
+.tab{
+    margin-left: 40px;
 }
 
 .titulo-invest{
@@ -387,6 +441,168 @@ to {color: var(--color-orange-0)}
     position: relative;
     font-size: 40px;
 }
+
+
+.invest-row{
+    display: flex;
+    padding-left: 7%;
+    padding-right: 7%;
+    //background-image: linear-gradient(rgba(1, 95, 99, 0.7),rgba(1, 95, 99, 0)),url(../img/soloexp-1.png);
+}
+
+.invest-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.invest-column{
+    display: block;
+    text-align: center;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: solid;
+    border-width: 9px;
+    border-radius:50%;
+}
+
+.pin{
+    margin-top: 2%;
+    border: none;
+    text-align: center;
+    border-radius:0%;
+    padding: 10px;
+}
+
+.invest-column:hover{
+    background-color: #015f63;
+    transition: .5s ease-in-out;
+}
+
+.pin:hover{
+    background-color: #015f6300;
+    transition: .5s ease-in-out;
+}
+
+.sob-terr-1{
+    height: 400vh;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+}
+
+.invest-image-row{
+
+    display: inline-block;
+    position: relative;;
+}
+
+.img-cam{
+    max-width: 75%;
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: 15%;
+}
+.cam{
+    margin-bottom: 10%;
+}
+
+.img-ess{
+    max-width: 75%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: solid;
+    border-color: var(--color-white);
+    border-width: 9px;
+}
+
+.img-mapapedo-1{
+    max-width: 78%;
+    margin-top: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+
+}
+
+.img-mapapedo-2{
+    max-width: 75%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: solid;
+    border-color: var(--color-white);
+    border-width: 9px;
+
+}
+
+.leg{
+    text-align: center;
+    font-size: 12px;
+    color: transparent;
+}
+
+.img-cam:hover + .cam{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+.img-ess:hover + .ess-1{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+.img-ess:hover + .ess-2{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+.img-mapapedo-1:hover + .pedo-1{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+.img-mapapedo-2:hover + .pedo-2{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+// SOLO EXPOSTO 1
+.solo-exposto-1-page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+}
+
+//SOBRE A TERRA 2
+.sob-terr-2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+}
+
+//SOLO EXPOSTO 2
+.solo-exposto-2-page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: inline-flex;
+}
+
+.subsec{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
 
 .bubbles {
     height: 100vh;
@@ -554,61 +770,3 @@ to {color: var(--color-orange-0)}
         margin-left:50px;
     }
 }
-
-.invest-row{
-    display: flex;
-    padding-left: 7%;
-    padding-right: 7%;
-    //background-image: linear-gradient(rgba(1, 95, 99, 0.7),rgba(1, 95, 99, 0)),url(../img/soloexp-1.png);
-}
-
-.invest-row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-.invest-column{
-    display: block;
-    text-align: center;
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    padding-top: 6px;
-    padding-bottom: 2px;
-    padding-left: 6px;
-    padding-right: 6px;
-    border: solid;
-    border-width: 9px;
-    border-radius:50%;
-}
-
-.pin{
-    margin-top: 2%;
-    border: none;
-    text-align: center;
-    border-radius:0%;
-    padding: 10px;
-}
-
-.invest-column:hover{
-    background-color: #015f63;
-    transition: .5s ease-in-out;
-}
-
-.pin:hover{
-    background-color: #015f6300;
-    transition: .5s ease-in-out;
-}
-
-.sob-terr-1{
-    height: 100vh;
-    width: 100%;
-}
-
-.subsec{
-    padding-top: 10%;
-    padding-bottom: 5%;
-}
-
