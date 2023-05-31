@@ -96,6 +96,24 @@ nav i:hover {
   position: relative;
 }
 
+.text-box-1 p::-moz-selection {
+  background-color: var(--color-orange-0);
+}
+
+.text-box-1 p::selection {
+  background-color: var(--color-orange-0);
+}
+
+.text-box-1 div::-moz-selection {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
+.text-box-1 div::selection {
+  color: var(--color-white);
+  background-color: transparent;
+}
+
 .hero-btn {
   display: inline-block;
   text-decoration: none;
@@ -109,6 +127,30 @@ nav i:hover {
   animation-name: color;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+
+.renato {
+  color: transparent;
+  font-size: 14px;
+  margin-left: 2%;
+  bottom: 2%;
+  position: fixed;
+  padding-top: 300px;
+  padding-right: 200px;
+  transition: 0.75s ease-in-out;
+}
+
+.stockler div::-moz-selection {
+  background-color: var(--color-orange-0);
+}
+
+.stockler div::selection {
+  background-color: var(--color-orange-0);
+}
+
+.renato:hover {
+  color: white;
+  transition: 0.75s ease-in-out;
 }
 
 @keyframes color {
@@ -181,11 +223,41 @@ nav i:hover {
   margin-bottom: auto;
 }
 
+.escrito h1::-moz-selection {
+  background-color: var(--color-orange-0);
+}
+
+.escrito h1::selection {
+  background-color: var(--color-orange-0);
+}
+
+.escrito h2::-moz-selection {
+  background-color: var(--color-orange-0);
+}
+
+.escrito h2::selection {
+  background-color: var(--color-orange-0);
+}
+
+.escrito p::-moz-selection {
+  color: transparent;
+  background-color: transparent;
+  -moz-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
+}
+
+.escrito p::selection {
+  color: transparent;
+  background-color: transparent;
+  transition: 0.75s ease-in-out;
+}
+
 .MB-11 {
   margin-top: -7%;
   max-width: 95%;
   font-size: 40px;
   text-align: left;
+  transition: 0.75s ease-in-out;
 }
 
 .MB-11:hover {
@@ -198,6 +270,7 @@ nav i:hover {
   max-width: 95%;
   font-size: 31.5px;
   text-align: left;
+  transition: 0.75s ease-in-out;
 }
 
 .MB-12:hover {
@@ -210,6 +283,7 @@ nav i:hover {
   max-width: 95%;
   font-size: 48px;
   text-align: left;
+  transition: 0.75s ease-in-out;
 }
 
 .MB-13:hover {
@@ -226,6 +300,7 @@ nav i:hover {
   margin-top: 10px;
   margin-bottom: 5%;
   text-align: left;
+  transition: 0.75s ease-in-out;
 }
 
 .citacao:hover {
@@ -294,6 +369,54 @@ nav i:hover {
   color: var(--color-white);
 }
 
+.intr-invest h1::-moz-selection {
+  color: var(--color-green-4);
+}
+
+.intr-invest h1::selection {
+  color: var(--color-green-4);
+}
+
+.intr-invest h2::-moz-selection {
+  color: var(--color-green-4);
+}
+
+.intr-invest h2::selection {
+  color: var(--color-green-4);
+}
+
+.intr-invest h3::-moz-selection {
+  background-color: var(--color-green-4);
+}
+
+.intr-invest h3::selection {
+  background-color: var(--color-green-4);
+}
+
+.intr-invest p::-moz-selection {
+  background-color: var(--color-green-4);
+}
+
+.intr-invest p::selection {
+  background-color: var(--color-green-4);
+}
+
+.tab li::-moz-selection {
+  background-color: var(--color-green-2);
+}
+
+.tab li::selection {
+  background-color: var(--color-green-2);
+}
+
+.tab b::-moz-selection {
+  color: var(--color-green-4);
+}
+
+.tab b::selection {
+  color: var(--color-green-4);
+}
+
 .cit {
   border: solid;
   border-width: 9px;
@@ -338,12 +461,6 @@ nav i:hover {
   padding-right: 7%;
 }
 
-.invest-row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .invest-column {
   display: block;
   text-align: center;
@@ -368,6 +485,14 @@ nav i:hover {
   padding: 10px;
 }
 
+.invest-column p::-moz-selection {
+  background-color: var(--color-orange-0);
+}
+
+.invest-column p::selection {
+  background-color: var(--color-orange-0);
+}
+
 .invest-column:hover {
   background-color: #015f63;
   transition: 0.5s ease-in-out;
@@ -376,13 +501,6 @@ nav i:hover {
 .pin:hover {
   background-color: rgba(1, 95, 99, 0);
   transition: 0.5s ease-in-out;
-}
-
-.sob-terr-1 {
-  height: 400vh;
-  width: 100%;
-  position: relative;
-  display: inline-flex;
 }
 
 .invest-image-row {
@@ -395,6 +513,8 @@ nav i:hover {
   margin-top: 15%;
   margin-right: auto;
   margin-left: 15%;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
 }
 
 .cam {
@@ -409,6 +529,8 @@ nav i:hover {
   border: solid;
   border-color: var(--color-white);
   border-width: 9px;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
 }
 
 .img-mapapedo-1 {
@@ -416,6 +538,8 @@ nav i:hover {
   margin-top: 20%;
   margin-right: 10%;
   margin-left: 10%;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
 }
 
 .img-mapapedo-2 {
@@ -427,6 +551,8 @@ nav i:hover {
   border: solid;
   border-color: var(--color-white);
   border-width: 9px;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
 }
 
 .leg {
@@ -435,8 +561,18 @@ nav i:hover {
   color: transparent;
 }
 
+.img-cam:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
 .img-cam:hover + .cam {
   color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-ess:hover {
+  transform: scale(1.1);
   transition: 0.75s ease-in-out;
 }
 
@@ -450,14 +586,37 @@ nav i:hover {
   transition: 0.75s ease-in-out;
 }
 
+.img-mapapedo-1:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
 .img-mapapedo-1:hover + .pedo-1 {
   color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-mapapedo-2:hover {
+  transform: scale(1.1);
   transition: 0.75s ease-in-out;
 }
 
 .img-mapapedo-2:hover + .pedo-2 {
   color: white;
   transition: 0.75s ease-in-out;
+}
+
+.img-div-1 {
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+.sob-terr-1 {
+  min-height: 350vh;
+  width: 100%;
+  position: relative;
+  display: inline-flex;
 }
 
 .solo-exposto-1-page {
