@@ -1,7 +1,7 @@
 <div class="fluid-row" id="header">
     <div id="column">
         <div class = "blocks">
-            <img src='https://github.com/JuliaCansado/SOLO-EXPOSTO/assets/68694598/76706e91-bceb-46ed-82d5-b3702dcea450' height='auto' width='150' align='right'>
+            <img src='https://github.com/JuliaCansado/SOLO-EXPOSTO/assets/68694598/76706e91-bceb-46ed-82d5-b3702dcea450' height='auto' width='130' align='right'>
         </div>
     </div>
     <h2 class="title toc-ignore">SOLO EXPOSTO: O (IN)DEFINIDO NA REGIÃO METROPOLITANA DE SÃO PAULO </h2>
