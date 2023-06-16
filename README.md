@@ -8,7 +8,7 @@
 </div>
 
         
-#### Por Júlia Ascencio Cansado, Orientação de Ana Cecília de Arruda Campos e Coorientação de Mayumi Cursino de Moura Hirye
+#### Por Júlia Ascencio Cansado, Orientação de Ana Cecília de Arruda Campos <br> e Coorientação de Mayumi Cursino de Moura Hirye
 
 Repositório para organização do Trabalho Final de Graduação "SOLO EXPOSTO: O (in)definido na Região Metropolitana de São Paulo", que será apresentado dia 11/07/2023 na Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo.
 <br>
