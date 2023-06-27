@@ -18,7 +18,25 @@ O solo exposto é raramente foco de investigações sobre as cidades, apesar de 
 <br>
 <br>
 ### COMO REPRODUZIR OS MAPAS?
-Fluxograma com o método de criação de mapa para 1 ano
+A geração de mapas com possíveis áreas de solo exposto segue o fluxograma abaixo:
 ![FLUXOGRAMAS](https://github.com/JuliaCansado/SOLO-EXPOSTO/assets/68694598/a97e508a-9357-4b2a-95fb-9e32a0fbd902)
 
-Tabela com os links do código diretamente no Google Earth Engine e no repositório
+
+| CÓDIGO | LINK PARA GOOGLE EARTH ENGINE | LINK PARA ARQUIVO NO GITHUB|
+|:------:|:-----------------------------:|:--------------------------:|
+|CÓDIGO 01| [01_classificacao_claro - GEE](https://code.earthengine.google.com/0531cc88bf63fb2d0fb9754ebf9e3d5f)|[01_classificacao_claro - GitHub](https://code.earthengine.google.com/a7b9e74e5e18b9288bc0f64f518b6548) |
+|CÓDIGO 02| [02_classificacao_escuro - GEE](https://code.earthengine.google.com/a7b9e74e5e18b9288bc0f64f518b6548)|[02_classificacao_escuro - GitHub](https://code.earthengine.google.com/a7b9e74e5e18b9288bc0f64f518b6548)|
+| CÓDIGO 03| [03_juncao_imagens - GEE](https://code.earthengine.google.com/ce3c7eb4a7e3adf794b0df86f86c23c1)| [03_juncao_imagens - GitHub](https://code.earthengine.google.com/ce3c7eb4a7e3adf794b0df86f86c23c1)|
+|CÓDIGO 04| [04_remocao_vetorizacao - GEE](https://code.earthengine.google.com/36e9340e970e3cd7c082fce29ca6c3fb)|[04_remocao_vetorizacao - GitHub](https://code.earthengine.google.com/36e9340e970e3cd7c082fce29ca6c3fb)|
+|CÓDIGO 05| [05_inclusao_propriedades - GEE](https://code.earthengine.google.com/f48eae8cc0f3fb69df3c1e01c074d599)|[05_inclusao_propriedades - GitHub](https://code.earthengine.google.com/f48eae8cc0f3fb69df3c1e01c074d599)|
+
+
+
+
+
+
+
+
+
+
+
