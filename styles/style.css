@@ -53,7 +53,7 @@ body {
 
 nav {
   display: flex;
-  padding: 2% 6%;
+  padding: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -77,16 +77,17 @@ nav i:hover {
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
+  padding-left: 1rem;
   position: relative;
   font-weight: 500;
   font-size: 14px;
 }
 
 .text-box-1 {
+  margin-top: 45vh;
+  padding: 1rem;
   display: grid;
   text-align: right;
-  margin: 30% 7% 0% 0%;
   position: relative;
   justify-content: right;
 }
@@ -119,16 +120,40 @@ nav i:hover {
   text-decoration: none;
   padding: 0px;
   background-color: transparent;
-  font-size: 54px;
+  font-size: 3.4rem;
   font-weight: bold;
   position: relative;
-  color: var(--color-white);
-  animation-delay: 2s;
+  color: var(--color-orange-0);
   animation-name: color;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes color {
+  from {
+    color: var(--color-orange-0);
+  }
+  to {
+    color: var(--color-white);
+  }
+}
+.subtitulo-solo {
+  font-size: 1.15rem;
+  color: transparent;
+  animation-delay: 2s;
+  animation-name: color2;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
+@keyframes color2 {
+  from {
+    color: transparent;
+  }
+  to {
+    color: var(--color-white);
+  }
+}
 .renato {
   color: transparent;
   font-size: 14px;
@@ -153,14 +178,6 @@ nav i:hover {
   transition: 0.75s ease-in-out;
 }
 
-@keyframes color {
-  from {
-    color: var(--color-white);
-  }
-  to {
-    color: var(--color-orange-0);
-  }
-}
 .nav-links ul li::after {
   content: "";
   width: 0%;
@@ -182,45 +199,20 @@ nav i:hover {
   transition: 0.5s;
 }
 
-@media (max-width: 700px) {
-  .text-box-1 {
-    margin: 95% 0% 0% 0%;
-    justify-content: center;
-  }
-  .nav-links ul li {
-    font-size: 12px;
-    display: inline-flexbox;
-  }
-  .nav-links {
-    position: absolute;
-    background: var(--color-orange-0);
-    height: 65px;
-    width: 100%;
-    top: 0%;
-    right: 0%;
-    text-align: center;
-    z-index: 2;
-    margin: 0% 0% 0% 10%;
-  }
-}
 .resumo {
-  margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding: 1rem;
   background-image: linear-gradient(rgba(1, 95, 99, 0.7), rgba(1, 95, 99, 0)), url(../img/background-street-2.png);
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   background-position: center;
   background-size: cover;
   position: relative;
-  display: inline-flex;
+  display: block;
 }
 
 .escrito {
-  max-width: 28%;
-  margin-left: 14%;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 
 .escrito h1::-moz-selection {
@@ -253,9 +245,8 @@ nav i:hover {
 }
 
 .MB-11 {
-  margin-top: -7%;
-  max-width: 95%;
-  font-size: 40px;
+  padding-top: 2rem;
+  font-size: 2.3rem;
   text-align: left;
   transition: 0.75s ease-in-out;
 }
@@ -267,8 +258,7 @@ nav i:hover {
 }
 
 .MB-12 {
-  max-width: 95%;
-  font-size: 31.5px;
+  font-size: 1.8rem;
   text-align: left;
   transition: 0.75s ease-in-out;
 }
@@ -280,8 +270,7 @@ nav i:hover {
 }
 
 .MB-13 {
-  max-width: 95%;
-  font-size: 48px;
+  font-size: 3rem;
   text-align: left;
   transition: 0.75s ease-in-out;
 }
@@ -294,7 +283,7 @@ nav i:hover {
 
 .citacao {
   max-width: 95%;
-  font-size: 24px;
+  font-size: 1.35rem;
   font-weight: 500;
   font-style: italic;
   margin-top: 10px;
@@ -314,35 +303,24 @@ nav i:hover {
   text-align: justify;
   -moz-text-align-last: left;
        text-align-last: left;
+  max-width: 500px;
 }
 
 .solo-cont {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: 14%;
-  display: block;
+  max-width: 100vh;
+  position: relative;
+  bottom: 0px;
 }
 
 .solo-1 {
-  max-width: 72%;
-  width: auto;
-  height: auto;
-  position: relative;
-  border: solid;
-  border-width: 10px;
-  border-color: var(--color-white);
-  margin-top: 8%;
+  margin-top: 3rem;
+  width: 80vw;
+  border: 9px solid var(--color-white);
 }
 
 .arrow {
-  max-width: 85%;
-  width: auto;
-  height: auto;
-  position: relative;
-  transform: rotate(0.7deg);
-  margin-left: 12%;
-  margin-right: -3%;
+  margin-left: 0.5rem;
+  width: 80vw;
 }
 
 .invest-body {
@@ -355,18 +333,69 @@ nav i:hover {
 .header-invest {
   min-height: 100vh;
   width: 100%;
-  position: relative;
+}
+
+.contain-titulo {
+  padding: 1rem;
+}
+
+.contain-titulo h1 {
+  font-size: 2.2rem;
 }
 
 .intr-invest {
-  margin-left: 6.2%;
-  max-width: 45%;
+  padding: 1rem;
+}
+
+.intr-invest h1 {
+  font-size: 2rem;
+}
+
+.intr-invest p {
+  font-size: 1.1rem;
   text-align: justify;
 }
 
-.intr-invest h2 {
-  font-size: 20px;
-  color: var(--color-white);
+.invest-row {
+  display: block;
+  text-align: center;
+}
+
+.contain-desc {
+  text-align: center;
+}
+
+.invest-column {
+  margin: auto;
+  border: solid;
+  border-width: 9px;
+  border-radius: 50%;
+  max-width: 240px;
+}
+
+.pin {
+  margin: auto;
+  max-width: 300px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.invest-column p::-moz-selection {
+  background-color: var(--color-orange-0);
+}
+
+.invest-column p::selection {
+  background-color: var(--color-orange-0);
+}
+
+.invest-column:hover {
+  background-color: #015f63;
+  transition: 0.5s ease-in-out;
+}
+
+.pin:hover {
+  background-color: rgba(1, 95, 99, 0);
+  transition: 0.5s ease-in-out;
 }
 
 .intr-invest h1::-moz-selection {
@@ -418,6 +447,7 @@ nav i:hover {
 }
 
 .cit {
+  font-size: 1rem;
   border: solid;
   border-width: 9px;
   border-color: transparent;
@@ -440,92 +470,25 @@ nav i:hover {
   font-weight: lighter;
 }
 
-.intr-invest p {
-  font-size: 17px;
-}
-
 .tab {
-  margin-left: 40px;
-}
-
-.titulo-invest {
-  text-align: left;
-  padding-top: 25px;
-  position: relative;
-  font-size: 40px;
-}
-
-.invest-row {
-  display: flex;
-  padding-left: 7%;
-  padding-right: 7%;
-}
-
-.invest-column {
-  display: block;
-  text-align: center;
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  padding-top: 6px;
-  padding-bottom: 2px;
-  padding-left: 6px;
-  padding-right: 6px;
-  border: solid;
-  border-width: 9px;
-  border-radius: 50%;
-}
-
-.pin {
-  margin-top: 2%;
-  border: none;
-  text-align: center;
-  border-radius: 0%;
-  padding: 10px;
-}
-
-.invest-column p::-moz-selection {
-  background-color: var(--color-orange-0);
-}
-
-.invest-column p::selection {
-  background-color: var(--color-orange-0);
-}
-
-.invest-column:hover {
-  background-color: #015f63;
-  transition: 0.5s ease-in-out;
-}
-
-.pin:hover {
-  background-color: rgba(1, 95, 99, 0);
-  transition: 0.5s ease-in-out;
+  margin-left: 1.3rem;
 }
 
 .invest-image-row {
-  display: inline-block;
-  position: relative;
+  padding-top: 1rem;
+  text-align: center;
+  margin: auto;
 }
 
 .img-cam {
-  max-width: 75%;
-  margin-top: 15%;
-  margin-right: auto;
-  margin-left: 15%;
+  max-width: 85vw;
+  margin: auto;
   transform: scale(1);
   transition: 0.75s ease-in-out;
 }
 
-.cam {
-  margin-bottom: 10%;
-}
-
 .img-ess {
-  max-width: 75%;
-  margin-top: 5%;
-  margin-right: 10%;
-  margin-left: 10%;
+  max-width: 85vw;
   border: solid;
   border-color: var(--color-white);
   border-width: 9px;
@@ -534,31 +497,18 @@ nav i:hover {
 }
 
 .img-mapapedo-1 {
-  max-width: 78%;
-  margin-top: 20%;
-  margin-right: 10%;
-  margin-left: 10%;
+  max-width: 85vw;
   transform: scale(1);
   transition: 0.75s ease-in-out;
 }
 
 .img-mapapedo-2 {
-  max-width: 75%;
-  margin-top: 5%;
-  margin-bottom: 0%;
-  margin-right: 10%;
-  margin-left: 10%;
+  max-width: 85vw;
   border: solid;
   border-color: var(--color-white);
   border-width: 9px;
   transform: scale(1);
   transition: 0.75s ease-in-out;
-}
-
-.leg {
-  text-align: center;
-  font-size: 12px;
-  color: transparent;
 }
 
 .img-cam:hover {
@@ -606,26 +556,218 @@ nav i:hover {
   transition: 0.75s ease-in-out;
 }
 
-.img-div-1 {
-  margin: 0;
-  width: 100%;
+.divisoria {
+  overflow: hidden;
   display: block;
+  min-height: 30vh;
+}
+
+.img-div-1 {
+  width: 120vw;
+  transform: scale(1.5);
+}
+
+.img-div-2 {
+  width: 60vw;
+  transform: scale(2.5);
+}
+
+.img-div-3 {
+  width: 100vw;
+  transform: scale(1);
+}
+
+.img-div-5 {
+  width: 70vw;
+  transform: scale(2);
 }
 
 .sob-terr-1 {
   min-height: 350vh;
   width: 100%;
   position: relative;
-  display: inline-flex;
+  display: block;
 }
 
 .solo-exposto-1-page {
-  height: 100vh;
+  min-height: 500vh;
   width: 100%;
   position: relative;
-  display: inline-flex;
+  display: block;
 }
 
+.leg {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 12px;
+  color: transparent;
+}
+
+.img-vu {
+  max-width: 85vw;
+  border: solid;
+  border-color: var(--color-white);
+  border-width: 9px;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-vu-2 {
+  opacity: 0;
+}
+
+.img-vu:hover + .vu-1 {
+  color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-vu:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-tv {
+  max-width: 85vw;
+  border: solid;
+  border-color: var(--color-white);
+  border-width: 9px;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-tv:hover + .tv-1 {
+  color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-tv:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-bf {
+  max-width: 85vw;
+  border: solid;
+  border-color: var(--color-white);
+  border-width: 9px;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-bf:hover + .bf-1 {
+  color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-bf:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-wl {
+  max-width: 85vw;
+  border: solid;
+  border-color: var(--color-white);
+  border-width: 9px;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-wl:hover + .wl-1 {
+  color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-wl:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-sol01 {
+  max-width: 85vw;
+  transform: scale(1);
+  transition: 0.75s ease-in-out;
+}
+
+.img-sol01:hover + .sol01-1 {
+  color: white;
+  transition: 0.75s ease-in-out;
+}
+
+.img-sol01:hover {
+  transform: scale(1.1);
+  transition: 0.75s ease-in-out;
+}
+
+@media screen and (min-width: 700px) {
+  .resumo {
+    display: flex;
+  }
+  .solo-cont {
+    margin: auto;
+    max-width: 40vw;
+  }
+  .solo-1 {
+    width: 30vw;
+    border: 9px solid var(--color-white);
+  }
+  .arrow {
+    margin-left: 0.5rem;
+    width: 30vw;
+  }
+  .invest-row {
+    display: flex;
+    margin: 3vw;
+    justify-content: space-between;
+  }
+  .invest-column {
+    margin: auto;
+    border: solid;
+    border-width: 9px;
+    border-radius: 50%;
+    max-width: 20vw;
+  }
+  .contain-desc {
+    max-width: 23%;
+  }
+  .cont-block {
+    display: flex;
+    min-width: 30%;
+  }
+  .intr-invest {
+    max-width: 45vw;
+    margin: auto;
+  }
+  .img {
+    max-width: 40vw;
+  }
+  .img-mapapedo-1 {
+    min-width: 85vw;
+  }
+  .img-tv, .img-wl {
+    min-width: 85vw;
+  }
+  .solo-exposto-1-page {
+    display: flex;
+  }
+  .divisoria {
+    width: 100vw;
+    display: block;
+  }
+  .img-div-1 {
+    transform: scale(1);
+  }
+  .img-div-2 {
+    transform: scale(1);
+  }
+  .img-div-2 {
+    transform: scale(0.5);
+  }
+  .one-block {
+    max-width: 45vw;
+    margin-left: 0.2rem;
+  }
+}
 .sob-terr-2 {
   height: 100vh;
   width: 100%;
@@ -643,6 +785,22 @@ nav i:hover {
 .subsec {
   padding-top: 10%;
   padding-bottom: 5%;
+}
+
+.sub-p {
+  text-align: justify;
+}
+
+.header-subs {
+  background-color: var(--color-orange-2);
+  background-image: linear-gradient(rgba(184, 71, 31, 0.4), rgb(184, 71, 31));
+  background-position: center;
+  background-size: cover;
+}
+
+.header-invest {
+  min-height: 100vh;
+  width: 100%;
 }
 
 .bubbles {
