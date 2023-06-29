@@ -22,14 +22,14 @@ A geração de mapas com possíveis áreas de solo exposto segue o fluxograma ab
 ![FLUXOGRAMAS](https://github.com/JuliaCansado/SOLO-EXPOSTO/assets/68694598/a97e508a-9357-4b2a-95fb-9e32a0fbd902)
 
 
-É possível acessar os códigos e rodá-los diretamente pelo Google Earth Engine ou acessar os scripts pelo GitHub através da tabela abaixo. **Atenção - Os polígonos para geração de amostras só estão disponíveis na plataforma GEE.**
+É possível acessar os códigos e rodá-los diretamente pelo Google Earth Engine ou acessar os scripts pelo GitHub através da tabela abaixo. **Atenção - Os scripts de mapeaamento estão no branch "mapeamento".**
 | CÓDIGO | LINK PARA GOOGLE EARTH ENGINE | LINK PARA ARQUIVO NO GITHUB|
 |:------:|:-----------------------------:|:--------------------------:|
-|**CÓDIGO 01 - CLASSIFICAÇÃO SOLO EXPOSTO CLARO** | [`01_classificacao_claro - Google Earth Engine`](https://code.earthengine.google.com/0531cc88bf63fb2d0fb9754ebf9e3d5f)|[`01_classificacao_claro - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/main/c%C3%B3digos/01_classificacao_claro) |
-|**CÓDIGO 02 - CLASSIFICAÇÃO SOLO EXPOSTO ESCURO**| [`02_classificacao_escuro - Google Earth Engine`](https://code.earthengine.google.com/a7b9e74e5e18b9288bc0f64f518b6548)|[`02_classificacao_escuro - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/main/c%C3%B3digos/02_classificacao_escuro)|
-|**CÓDIGO 03 - JUNÇÃO DAS IMAGENS**| [`03_juncao_imagens - Google Earth Engine`](https://code.earthengine.google.com/ce3c7eb4a7e3adf794b0df86f86c23c1)| [`03_juncao_imagens - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/main/c%C3%B3digos/03_juncao_imagens)|
-|**CÓDIGO 04 - REMOÇÃO E VETORIZAÇÃO DE ÁREAS**| [`04_remocao_vetorizacao - Google Earth Engine`](https://code.earthengine.google.com/36e9340e970e3cd7c082fce29ca6c3fb)|[`04_remocao_vetorizacao - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/main/c%C3%B3digos/04_remocao_vetorizacao)|
-|**CÓDIGO 05 - INCLUSÃO DE PROPRIEDADES E CORREÇÕES**| [`05_inclusao_propriedades - Google Earth Engine`](https://code.earthengine.google.com/f48eae8cc0f3fb69df3c1e01c074d599)|[`05_inclusao_propriedades - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/main/c%C3%B3digos/05_inclusao_propriedades)|
+|**CÓDIGO 01 - CLASSIFICAÇÃO SOLO EXPOSTO CLARO** | [`01_classificacao_claro - Google Earth Engine`](https://code.earthengine.google.com/0531cc88bf63fb2d0fb9754ebf9e3d5f)|[`01_classificacao_claro - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/mapeamento/c%C3%B3digos/01_classificacao_claro) |
+|**CÓDIGO 02 - CLASSIFICAÇÃO SOLO EXPOSTO ESCURO**| [`02_classificacao_escuro - Google Earth Engine`](https://code.earthengine.google.com/a7b9e74e5e18b9288bc0f64f518b6548)|[`02_classificacao_escuro - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/mapeamento/c%C3%B3digos/02_classificacao_escuro)|
+|**CÓDIGO 03 - JUNÇÃO DAS IMAGENS**| [`03_juncao_imagens - Google Earth Engine`](https://code.earthengine.google.com/ce3c7eb4a7e3adf794b0df86f86c23c1)| [`03_juncao_imagens - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/mapeamento/c%C3%B3digos/03_juncao_imagens)|
+|**CÓDIGO 04 - REMOÇÃO E VETORIZAÇÃO DE ÁREAS**| [`04_remocao_vetorizacao - Google Earth Engine`](https://code.earthengine.google.com/36e9340e970e3cd7c082fce29ca6c3fb)|[`04_remocao_vetorizacao - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/mapeamento/c%C3%B3digos/04_remocao_vetorizacao)|
+|**CÓDIGO 05 - INCLUSÃO DE PROPRIEDADES E CORREÇÕES**| [`05_inclusao_propriedades - Google Earth Engine`](https://code.earthengine.google.com/f48eae8cc0f3fb69df3c1e01c074d599)|[`05_inclusao_propriedades - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/mapeamento/c%C3%B3digos/05_inclusao_propriedades)|
 
 <br>
 
