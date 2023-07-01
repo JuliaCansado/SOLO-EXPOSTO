@@ -342,17 +342,15 @@ nav i:hover{
     font-size: 2.2rem;;
 }
 
-.intr-invest{
-    padding: 1rem;
-}
-
 .intr-invest h1{
-    font-size: 2rem;;
+    font-size: 2rem;
+    padding: 1rem;
 }
 
 .intr-invest p{
     font-size: 1.1rem;
     text-align: justify;
+    padding: 1rem;
 }
 
 .invest-row{
@@ -459,7 +457,7 @@ nav i:hover{
 }
 
 .invest-image-row{
-    padding-top: 1rem ;
+    //padding: 1rem ;
     text-align: center;
     margin: auto;
 }
@@ -550,13 +548,13 @@ nav i:hover{
     min-height: 30vh;
 }
 
+.img-div-0{
+    width: 100vw;
+    transform: scale(1.3);
+}
 .img-div-1{
     width: 120vw;
     transform: scale(1.5);
-}
-.img-div-2{
-    width: 60vw;
-    transform: scale(2.5);
 }
 .img-div-3{
     width: 100vw;
@@ -586,7 +584,9 @@ nav i:hover{
 }
 
 .leg{
+    max-width: 80vw;
     margin-top: 1rem;
+    margin: auto;
     text-align: center;
     font-size: 12px;
     color: transparent;
@@ -676,6 +676,46 @@ nav i:hover{
     transition: .75s ease-in-out;
 }
 
+.img-tab03{
+    max-width: 85vw;
+    // border: solid;
+    // border-color: var(--color-white);
+    // border-width: 9px;
+    transform: scale(1);
+    transition: .75s ease-in-out;
+
+}
+
+.img-tab03:hover + .tab03{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+.img-tab03:hover{
+    transform: scale(1.1);
+    transition: .75s ease-in-out;
+}
+
+.img-al{
+    max-width: 85vw;
+    // border: solid;
+    // border-color: var(--color-white);
+    // border-width: 9px;
+    transform: scale(1);
+    transition: .75s ease-in-out;
+
+}
+
+.img-al:hover + .al-1{
+    color: white;
+    transition: .75s ease-in-out;
+}
+
+.img-al:hover{
+    transform: scale(1.1);
+    transition: .75s ease-in-out;
+}
+
 .img-sol01{
     max-width: 85vw;
     transform: scale(1);
@@ -737,8 +777,11 @@ nav i:hover{
     }
 
     .intr-invest{
-        max-width: 45vw;
+        max-width: 40vw;
         margin: auto;
+        margin-left: 1.5rem;
+        padding: 1rem;
+    
     }
     .img{
         max-width: 40vw;
@@ -746,10 +789,19 @@ nav i:hover{
     .img-mapapedo-1{
         min-width: 85vw;
     }
-    .img-tv,.img-wl{
+    .img-tv,.img-wl, .img-tab03{
         min-width: 85vw;
+        text-align: center;
+        margin: auto;
+        padding: auto;
     }
 
+    .arrow-2{
+        padding: 2.5rem;
+    }
+    .img-al{
+        min-width: 85vw;
+    }
 
     .solo-exposto-1-page{
         display: flex;
@@ -762,7 +814,7 @@ nav i:hover{
     .img-div-1{
         transform: scale(1);
     }
-    .img-div-2{
+    .img-div-0{
         transform: scale(1);
     }
     .img-div-2{
@@ -771,8 +823,12 @@ nav i:hover{
 
 
     .one-block{
-        max-width: 45vw;
-        margin-left: 0.2rem;
+        max-width: 40vw;
+        margin-left: 1.5rem;
+    }
+
+    .leg{
+        max-width: 40vw;
     }
 }
 
@@ -823,6 +879,12 @@ nav i:hover{
 
 }
 
+.escrito2{
+    max-width: 80vw;
+        margin: auto;
+        margin-left: 2.5rem;
+        padding: 1rem;
+}
 
 //BOLHAS
 .bubbles {
