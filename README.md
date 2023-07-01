@@ -22,7 +22,8 @@ A geração de mapas com possíveis áreas de solo exposto segue o fluxograma ab
 ![FLUXOGRAMAS](https://github.com/JuliaCansado/SOLO-EXPOSTO/assets/68694598/a97e508a-9357-4b2a-95fb-9e32a0fbd902)
 
 
-É possível acessar os códigos e rodá-los diretamente pelo Google Earth Engine ou acessar os scripts pelo GitHub através da tabela abaixo. **Atenção - Os scripts de mapeaamento estão no branch "mapeamento".**
+
+É possível acessar os códigos e rodá-los diretamente pelo Google Earth Engine ou acessar os scripts pelo GitHub através da tabela abaixo. **Atenção - Os scripts de mapeamento estão no branch "mapeamento" e o código desenvolvido para a interface está no branch "interface".**
 | CÓDIGO | LINK PARA GOOGLE EARTH ENGINE | LINK PARA ARQUIVO NO GITHUB|
 |:------:|:-----------------------------:|:--------------------------:|
 |**CÓDIGO 01 - CLASSIFICAÇÃO SOLO EXPOSTO CLARO** | [`01_classificacao_claro - Google Earth Engine`](https://code.earthengine.google.com/0531cc88bf63fb2d0fb9754ebf9e3d5f)|[`01_classificacao_claro - GitHub`](https://github.com/JuliaCansado/SOLO-EXPOSTO/blob/mapeamento/c%C3%B3digos/01_classificacao_claro) |
