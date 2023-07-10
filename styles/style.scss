@@ -830,6 +830,16 @@ nav i:hover{
     .leg{
         max-width: 40vw;
     }
+
+    .img-zoom{
+        height: 90vh;
+        min-width: auto;
+    }
+
+    .img-min{
+        width: 90vw;
+        height: auto;
+    }
 }
 
 //SOBRE A TERRA 2
@@ -884,6 +894,30 @@ nav i:hover{
         margin: auto;
         margin-left: 2.5rem;
         padding: 1rem;
+}
+
+
+//ZOOM
+.zoom{
+    background-color: var(--color-green-2);
+    background-image: linear-gradient(rgba(75, 115, 105, 0.3),
+                                      rgba(11, 55, 59, 1))
+                                        /*rgba(199, 63, 24,  0.5),
+                                        rgba(185, 102, 44,  0.1)),url(../img/soil-texture.png)*/;
+    background-position: center;
+    background-size: cover;
+    min-height: 500vh;
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.zoom-sec{
+    padding-top: 2rem;
+    margin: auto;
+    height: 100vh;
 }
 
 //BOLHAS
